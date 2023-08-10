@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "status",
+					"strict" : false
+				},
+				{
+					"name" : "overflow",
+					"strict" : false
+				},
+				{
+					"name" : "sinal",
+					"strict" : false
+				},
+				{
+					"name" : "s_a1",
+					"strict" : false
+				},
+				{
+					"name" : "s_b1",
+					"strict" : false
+				},
+				{
+					"name" : "s_c1",
+					"strict" : false
+				},
+				{
+					"name" : "s_d1",
+					"strict" : false
+				},
+				{
+					"name" : "s_e1",
+					"strict" : false
+				},
+				{
+					"name" : "s_f1",
+					"strict" : false
+				},
+				{
+					"name" : "s_g1",
+					"strict" : false
+				},
+				{
+					"name" : "a1",
+					"strict" : false
+				},
+				{
+					"name" : "d1",
+					"strict" : false
+				},
+				{
+					"name" : "e1",
+					"strict" : false
+				},
+				{
+					"name" : "f1",
+					"strict" : false
+				},
+				{
+					"name" : "a2",
+					"strict" : false
+				},
+				{
+					"name" : "b2",
+					"strict" : false
+				},
+				{
+					"name" : "c2",
+					"strict" : false
+				},
+				{
+					"name" : "d2",
+					"strict" : false
+				},
+				{
+					"name" : "e2",
+					"strict" : false
+				},
+				{
+					"name" : "f2",
+					"strict" : false
+				},
+				{
+					"name" : "g2",
+					"strict" : false
+				},
+				{
+					"name" : "sel_1",
+					"strict" : false
+				},
+				{
+					"name" : "sel_2",
+					"strict" : false
+				},
+				{
+					"name" : "sel_0",
+					"strict" : false
+				},
+				{
+					"name" : "n1_bit4",
+					"strict" : false
+				},
+				{
+					"name" : "n2_bit4",
+					"strict" : false
+				},
+				{
+					"name" : "n1_bit3",
+					"strict" : false
+				},
+				{
+					"name" : "n2_bit3",
+					"strict" : false
+				},
+				{
+					"name" : "n1_bit2",
+					"strict" : false
+				},
+				{
+					"name" : "n2_bit2",
+					"strict" : false
+				},
+				{
+					"name" : "n1_bit1",
+					"strict" : false
+				},
+				{
+					"name" : "n2_bit1",
+					"strict" : false
+				},
+				{
+					"name" : "n1_bit0",
+					"strict" : false
+				},
+				{
+					"name" : "n2_bit0",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

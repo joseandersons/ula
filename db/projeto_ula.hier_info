@@ -1,0 +1,1707 @@
+|projeto_ula
+status <= ula:inst3.status
+n1_bit0 => ula:inst3.n1_bit0
+n1_bit1 => ula:inst3.n1_bit1
+n1_bit2 => ula:inst3.n1_bit2
+n1_bit3 => ula:inst3.n1_bit3
+n1_bit4 => ula:inst3.n1_bit4
+n2_bit0 => ula:inst3.n2_bit0
+n2_bit1 => ula:inst3.n2_bit1
+n2_bit2 => ula:inst3.n2_bit2
+n2_bit3 => ula:inst3.n2_bit3
+n2_bit4 => ula:inst3.n2_bit4
+sel_0 => ula:inst3.sel_0
+sel_1 => ula:inst3.sel_1
+sel_2 => ula:inst3.sel_2
+overflow <= ula:inst3.overflow
+sinal <= ula:inst3.sinal
+s_a1 <= simb_negativo:inst365659.a1
+s_b1 <= simb_negativo:inst365659.b1
+s_c1 <= simb_negativo:inst365659.c1
+s_d1 <= simb_negativo:inst365659.d1
+s_e1 <= simb_negativo:inst365659.e1
+s_f1 <= simb_negativo:inst365659.f1
+s_g1 <= simb_negativo:inst365659.g1
+a1 <= decode:inst1.A1
+b1 <= decode:inst1.B1
+c1 <= decode:inst1.C1
+d1 <= decode:inst1.D1
+e1 <= decode:inst1.E1
+f1 <= decode:inst1.F1
+g1 <= decode:inst1.G1
+a2 <= decode:inst1.A2
+b2 <= decode:inst1.B2
+c2 <= decode:inst1.C2
+d2 <= decode:inst1.D2
+e2 <= decode:inst1.E2
+f2 <= decode:inst1.F2
+g2 <= decode:inst1.G2
+
+
+|projeto_ula|ula:inst3
+status <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+sel_0 => decodificador_3_para_8:inst.sel_0
+sel_1 => decodificador_3_para_8:inst.sel_1
+sel_2 => decodificador_3_para_8:inst.sel_2
+n1_bit4 => menor_igualq_5bit:inst8.n1_bit4
+n1_bit4 => maiorq_5bits:inst3.n1_bit4
+n1_bit4 => subtrator:inst22.n1_bit4
+n1_bit4 => somador:inst1.n1_bit4
+n1_bit4 => min:inst222.n1_bit4
+n1_bit4 => max:inst7.n1_bit4
+n1_bit4 => modulo_5bits:inst14.n2_bit4
+n1_bit4 => shiftbit_2:inst13.n1_bit4
+n1_bit0 => menor_igualq_5bit:inst8.n1_bit0
+n1_bit0 => maiorq_5bits:inst3.n1_bit0
+n1_bit0 => subtrator:inst22.n1_bit0
+n1_bit0 => somador:inst1.n1_bit0
+n1_bit0 => min:inst222.n1_bit0
+n1_bit0 => max:inst7.n1_bit0
+n1_bit0 => modulo_5bits:inst14.n2_bit0
+n1_bit0 => shiftbit_2:inst13.n1_bit0
+n1_bit2 => menor_igualq_5bit:inst8.n1_bit2
+n1_bit2 => maiorq_5bits:inst3.n1_bit2
+n1_bit2 => subtrator:inst22.n1_bit2
+n1_bit2 => somador:inst1.n1_bit2
+n1_bit2 => min:inst222.n1_bit2
+n1_bit2 => max:inst7.n1_bit2
+n1_bit2 => modulo_5bits:inst14.n2_bit2
+n1_bit2 => shiftbit_2:inst13.n1_bit2
+n1_bit3 => menor_igualq_5bit:inst8.n1_bit3
+n1_bit3 => maiorq_5bits:inst3.n1_bit3
+n1_bit3 => subtrator:inst22.n1_bit3
+n1_bit3 => somador:inst1.n1_bit3
+n1_bit3 => min:inst222.n1_bit3
+n1_bit3 => max:inst7.n1_bit3
+n1_bit3 => modulo_5bits:inst14.n2_bit3
+n1_bit3 => shiftbit_2:inst13.n1_bit3
+n1_bit1 => menor_igualq_5bit:inst8.n1_bit1
+n1_bit1 => maiorq_5bits:inst3.n1_bit1
+n1_bit1 => subtrator:inst22.n1_bit1
+n1_bit1 => somador:inst1.n1_bit1
+n1_bit1 => min:inst222.n1_bit1
+n1_bit1 => max:inst7.n1_bit1
+n1_bit1 => modulo_5bits:inst14.n2_bit1
+n1_bit1 => shiftbit_2:inst13.n1_bit1
+n2_bit0 => menor_igualq_5bit:inst8.n2_bit0
+n2_bit0 => maiorq_5bits:inst3.n2_bit0
+n2_bit0 => subtrator:inst22.n2_bit0
+n2_bit0 => somador:inst1.n2_bit0
+n2_bit0 => min:inst222.n2_bit0
+n2_bit0 => max:inst7.n2_bit0
+n2_bit1 => menor_igualq_5bit:inst8.n2_bit1
+n2_bit1 => maiorq_5bits:inst3.n2_bit1
+n2_bit1 => subtrator:inst22.n2_bit1
+n2_bit1 => somador:inst1.n2_bit1
+n2_bit1 => min:inst222.n2_bit1
+n2_bit1 => max:inst7.n2_bit1
+n2_bit2 => menor_igualq_5bit:inst8.n2_bit2
+n2_bit2 => maiorq_5bits:inst3.n2_bit2
+n2_bit2 => subtrator:inst22.n2_bit2
+n2_bit2 => somador:inst1.n2_bit2
+n2_bit2 => min:inst222.n2_bit2
+n2_bit2 => max:inst7.n2_bit2
+n2_bit3 => menor_igualq_5bit:inst8.n2_bit3
+n2_bit3 => maiorq_5bits:inst3.n2_bit3
+n2_bit3 => subtrator:inst22.n2_bit3
+n2_bit3 => somador:inst1.n2_bit3
+n2_bit3 => min:inst222.n2_bit3
+n2_bit3 => max:inst7.n2_bit3
+n2_bit4 => menor_igualq_5bit:inst8.n2_bit4
+n2_bit4 => maiorq_5bits:inst3.n2_bit4
+n2_bit4 => subtrator:inst22.n2_bit4
+n2_bit4 => somador:inst1.n2_bit4
+n2_bit4 => min:inst222.n2_bit4
+n2_bit4 => max:inst7.n2_bit4
+overflow <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+sinal <= mux_2_1:inst19.s
+s0 <= mux_10_5:inst21.r0
+s1 <= mux_10_5:inst21.r1
+s2 <= mux_10_5:inst21.r2
+s3 <= mux_10_5:inst21.r3
+s4 <= mux_10_5:inst21.r4
+
+
+|projeto_ula|ula:inst3|decodificador_3_para_8:inst
+sum <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel_0 => inst8.IN0
+sel_0 => inst1.IN2
+sel_0 => inst3.IN2
+sel_0 => inst5.IN2
+sel_0 => inst7.IN2
+sel_1 => inst9.IN0
+sel_1 => inst2.IN1
+sel_1 => inst3.IN1
+sel_1 => inst6.IN1
+sel_1 => inst7.IN1
+sel_2 => inst10.IN0
+sel_2 => inst4.IN0
+sel_2 => inst5.IN0
+sel_2 => inst6.IN0
+sel_2 => inst7.IN0
+sub <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+min <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+max <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+maiorq <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+menor_gualq <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+modulo <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+shift_bit <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|menor_igualq_5bit:inst8
+s <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+n1_bit4 => inst9.IN0
+n2_bit4 => inst8.IN0
+n1_bit3 => menor_igualq_1bit:inst1.a
+n2_bit3 => menor_igualq_1bit:inst1.b
+n1_bit2 => menor_igualq_1bit:inst2.a
+n2_bit2 => menor_igualq_1bit:inst2.b
+n1_bit1 => menor_igualq_1bit:inst3.a
+n2_bit1 => menor_igualq_1bit:inst3.b
+n1_bit0 => menor_igualq_1bit:inst4.a
+n2_bit0 => menor_igualq_1bit:inst4.b
+
+
+|projeto_ula|ula:inst3|menor_igualq_5bit:inst8|menor_igualq_1bit:inst4
+out_igual <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+in_igual => inst3.IN0
+in_igual => inst7.IN0
+a => inst4.IN0
+a => inst5.IN0
+b => inst4.IN1
+b => inst2.IN0
+out_menorq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in_menorq => inst.IN0
+
+
+|projeto_ula|ula:inst3|menor_igualq_5bit:inst8|menor_igualq_1bit:inst3
+out_igual <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+in_igual => inst3.IN0
+in_igual => inst7.IN0
+a => inst4.IN0
+a => inst5.IN0
+b => inst4.IN1
+b => inst2.IN0
+out_menorq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in_menorq => inst.IN0
+
+
+|projeto_ula|ula:inst3|menor_igualq_5bit:inst8|menor_igualq_1bit:inst2
+out_igual <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+in_igual => inst3.IN0
+in_igual => inst7.IN0
+a => inst4.IN0
+a => inst5.IN0
+b => inst4.IN1
+b => inst2.IN0
+out_menorq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in_menorq => inst.IN0
+
+
+|projeto_ula|ula:inst3|menor_igualq_5bit:inst8|menor_igualq_1bit:inst1
+out_igual <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+in_igual => inst3.IN0
+in_igual => inst7.IN0
+a => inst4.IN0
+a => inst5.IN0
+b => inst4.IN1
+b => inst2.IN0
+out_menorq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in_menorq => inst.IN0
+
+
+|projeto_ula|ula:inst3|menor_igualq_5bit:inst8|menor_igualq_1bit:inst
+out_igual <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+in_igual => inst3.IN0
+in_igual => inst7.IN0
+a => inst4.IN0
+a => inst5.IN0
+b => inst4.IN1
+b => inst2.IN0
+out_menorq <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in_menorq => inst.IN0
+
+
+|projeto_ula|ula:inst3|maiorq_5bits:inst3
+s <= maiorq_1bit:inst5.s
+n1_bit0 => maiorq_1bit:inst5.a
+n2_bit0 => maiorq_1bit:inst5.b
+n1_bit1 => maiorq_1bit:inst4.a
+n2_bit1 => maiorq_1bit:inst4.b
+n1_bit2 => maiorq_1bit:inst3.a
+n2_bit2 => maiorq_1bit:inst3.b
+n1_bit3 => maiorq_1bit:inst2.a
+n2_bit3 => maiorq_1bit:inst2.b
+n1_bit4 => inst1.IN0
+n2_bit4 => inst7.IN0
+
+
+|projeto_ula|ula:inst3|maiorq_5bits:inst3|maiorq_1bit:inst5
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|maiorq_5bits:inst3|maiorq_1bit:inst4
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|maiorq_5bits:inst3|maiorq_1bit:inst3
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|maiorq_5bits:inst3|maiorq_1bit:inst2
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|maiorq_5bits:inst3|maiorq_1bit:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|subtrator:inst22
+s_bit0 <= somador_completo:inst.S
+n1_bit0 => somador_completo:inst.A
+n2_bit4 => CL2:inst1.bit4
+n2_bit4 => overflow:inst2.b
+n2_bit3 => CL2:inst1.bit3
+n2_bit2 => CL2:inst1.bit2
+n2_bit1 => CL2:inst1.bit1
+n2_bit0 => CL2:inst1.bit0
+s_bit1 <= somador_completo:inst4.S
+n1_bit1 => somador_completo:inst4.A
+s_bit2 <= somador_completo:inst5.S
+n1_bit2 => somador_completo:inst5.A
+s_bit3 <= somador_completo:inst6.S
+n1_bit3 => somador_completo:inst6.A
+s_bit4 <= somador_completo:inst7.S
+n1_bit4 => somador_completo:inst7.A
+n1_bit4 => overflow:inst2.a
+ovf <= overflow:inst2.o
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|somador_completo:inst
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|CL2:inst1
+s0 <= somador_completo:inst.S
+bit0 => inst10.IN0
+terra => inst5.IN0
+terra => somador_completo:inst.VEM
+terra => somador_completo:inst2.VEM
+terra => somador_completo:inst3.VEM
+terra => somador_completo:inst4.VEM
+terra => somador_completo:inst11.VEM
+s1 <= somador_completo:inst2.S
+bit1 => inst6.IN0
+s2 <= somador_completo:inst3.S
+bit2 => inst7.IN0
+s3 <= somador_completo:inst4.S
+bit3 => inst8.IN0
+s4 <= somador_completo:inst11.S
+bit4 => inst9.IN0
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|CL2:inst1|somador_completo:inst
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|CL2:inst1|somador_completo:inst2
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|CL2:inst1|somador_completo:inst3
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|CL2:inst1|somador_completo:inst4
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|CL2:inst1|somador_completo:inst11
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|somador_completo:inst4
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|somador_completo:inst5
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|somador_completo:inst6
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|somador_completo:inst7
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|subtrator:inst22|overflow:inst2
+o <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+a => inst5.IN0
+a => inst6.IN0
+a => inst.IN0
+s => inst1.IN2
+s => inst4.IN0
+b => inst.IN1
+
+
+|projeto_ula|ula:inst3|somador:inst1
+s_bit0 <= somador_completo:inst.S
+n1_bit0 => somador_completo:inst.A
+n2_bit0 => somador_completo:inst.B
+s_bit1 <= somador_completo:inst4.S
+n1_bit1 => somador_completo:inst4.A
+n2_bit1 => somador_completo:inst4.B
+s_bit2 <= somador_completo:inst5.S
+n1_bit2 => somador_completo:inst5.A
+n2_bit2 => somador_completo:inst5.B
+s_bit3 <= somador_completo:inst6.S
+n1_bit3 => somador_completo:inst6.A
+n2_bit3 => somador_completo:inst6.B
+s_bit4 <= somador_completo:inst7.S
+n1_bit4 => somador_completo:inst7.A
+n1_bit4 => overflow:inst2.a
+n2_bit4 => somador_completo:inst7.B
+ovrf <= overflow:inst2.o
+
+
+|projeto_ula|ula:inst3|somador:inst1|somador_completo:inst
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|somador:inst1|somador_completo:inst4
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|somador:inst1|somador_completo:inst5
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|somador:inst1|somador_completo:inst6
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|somador:inst1|somador_completo:inst7
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|somador:inst1|overflow:inst2
+o <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+a => inst5.IN0
+a => inst6.IN0
+a => inst.IN0
+s => inst1.IN2
+s => inst4.IN0
+b => inst.IN1
+
+
+|projeto_ula|ula:inst3|mux_2_1:inst19
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst21
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst21|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst21|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst21|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst21|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst21|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|min:inst222
+s_bit0 <= mux_2_1:inst.s
+n1_bit0 => mux_2_1:inst.a
+n1_bit0 => maiorq_5bits:inst2.n1_bit0
+n2_bit0 => mux_2_1:inst.b
+n2_bit0 => maiorq_5bits:inst2.n2_bit4
+n1_bit4 => maiorq_5bits:inst2.n1_bit4
+n1_bit4 => mux_2_1:inst11.a
+n1_bit2 => maiorq_5bits:inst2.n1_bit2
+n1_bit2 => mux_2_1:inst10.a
+n1_bit1 => maiorq_5bits:inst2.n1_bit1
+n1_bit1 => mux_2_1:inst9.a
+n1_bit3 => maiorq_5bits:inst2.n1_bit3
+n1_bit3 => mux_2_1:inst12.a
+n2_bit4 => maiorq_5bits:inst2.n2_bit0
+n2_bit4 => mux_2_1:inst11.b
+n2_bit3 => maiorq_5bits:inst2.n2_bit1
+n2_bit3 => mux_2_1:inst12.b
+n2_bit1 => maiorq_5bits:inst2.n2_bit3
+n2_bit1 => mux_2_1:inst9.b
+n2_bit2 => maiorq_5bits:inst2.n2_bit2
+n2_bit2 => mux_2_1:inst10.b
+s_bit1 <= mux_2_1:inst9.s
+s_bit2 <= mux_2_1:inst10.s
+s_bit3 <= mux_2_1:inst12.s
+s_bit4 <= mux_2_1:inst11.s
+
+
+|projeto_ula|ula:inst3|min:inst222|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|min:inst222|maiorq_5bits:inst2
+s <= maiorq_1bit:inst5.s
+n1_bit0 => maiorq_1bit:inst5.a
+n2_bit0 => maiorq_1bit:inst5.b
+n1_bit1 => maiorq_1bit:inst4.a
+n2_bit1 => maiorq_1bit:inst4.b
+n1_bit2 => maiorq_1bit:inst3.a
+n2_bit2 => maiorq_1bit:inst3.b
+n1_bit3 => maiorq_1bit:inst2.a
+n2_bit3 => maiorq_1bit:inst2.b
+n1_bit4 => inst1.IN0
+n2_bit4 => inst7.IN0
+
+
+|projeto_ula|ula:inst3|min:inst222|maiorq_5bits:inst2|maiorq_1bit:inst5
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|min:inst222|maiorq_5bits:inst2|maiorq_1bit:inst4
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|min:inst222|maiorq_5bits:inst2|maiorq_1bit:inst3
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|min:inst222|maiorq_5bits:inst2|maiorq_1bit:inst2
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|min:inst222|maiorq_5bits:inst2|maiorq_1bit:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|min:inst222|mux_2_1:inst9
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|min:inst222|mux_2_1:inst10
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|min:inst222|mux_2_1:inst12
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|min:inst222|mux_2_1:inst11
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst20
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst20|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst20|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst20|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst20|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst20|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|max:inst7
+s_bit0 <= mux_2_1:inst.s
+n1_bit0 => mux_2_1:inst.a
+n1_bit0 => maiorq_5bits:inst2.n1_bit0
+n2_bit0 => mux_2_1:inst.b
+n2_bit0 => maiorq_5bits:inst2.n2_bit4
+n1_bit4 => maiorq_5bits:inst2.n1_bit4
+n1_bit4 => mux_2_1:inst11.a
+n1_bit2 => maiorq_5bits:inst2.n1_bit2
+n1_bit2 => mux_2_1:inst10.a
+n1_bit1 => maiorq_5bits:inst2.n1_bit1
+n1_bit1 => mux_2_1:inst9.a
+n1_bit3 => maiorq_5bits:inst2.n1_bit3
+n1_bit3 => mux_2_1:inst12.a
+n2_bit4 => maiorq_5bits:inst2.n2_bit0
+n2_bit4 => mux_2_1:inst11.b
+n2_bit3 => maiorq_5bits:inst2.n2_bit1
+n2_bit3 => mux_2_1:inst12.b
+n2_bit1 => maiorq_5bits:inst2.n2_bit3
+n2_bit1 => mux_2_1:inst9.b
+n2_bit2 => maiorq_5bits:inst2.n2_bit2
+n2_bit2 => mux_2_1:inst10.b
+s_bit1 <= mux_2_1:inst9.s
+s_bit2 <= mux_2_1:inst10.s
+s_bit3 <= mux_2_1:inst12.s
+s_bit4 <= mux_2_1:inst11.s
+
+
+|projeto_ula|ula:inst3|max:inst7|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|max:inst7|maiorq_5bits:inst2
+s <= maiorq_1bit:inst5.s
+n1_bit0 => maiorq_1bit:inst5.a
+n2_bit0 => maiorq_1bit:inst5.b
+n1_bit1 => maiorq_1bit:inst4.a
+n2_bit1 => maiorq_1bit:inst4.b
+n1_bit2 => maiorq_1bit:inst3.a
+n2_bit2 => maiorq_1bit:inst3.b
+n1_bit3 => maiorq_1bit:inst2.a
+n2_bit3 => maiorq_1bit:inst2.b
+n1_bit4 => inst1.IN0
+n2_bit4 => inst7.IN0
+
+
+|projeto_ula|ula:inst3|max:inst7|maiorq_5bits:inst2|maiorq_1bit:inst5
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|max:inst7|maiorq_5bits:inst2|maiorq_1bit:inst4
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|max:inst7|maiorq_5bits:inst2|maiorq_1bit:inst3
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|max:inst7|maiorq_5bits:inst2|maiorq_1bit:inst2
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|max:inst7|maiorq_5bits:inst2|maiorq_1bit:inst
+s <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+anterior => inst1.IN0
+b => inst.IN0
+a => inst2.IN1
+
+
+|projeto_ula|ula:inst3|max:inst7|mux_2_1:inst9
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|max:inst7|mux_2_1:inst10
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|max:inst7|mux_2_1:inst12
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|max:inst7|mux_2_1:inst11
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst15
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst15|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst15|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst15|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst15|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst15|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14
+s0 <= mux_10_5:inst5.r0
+n2_bit4 => CPL2:inst125.bit4
+n2_bit4 => mux_10_5:inst5.ant4
+n2_bit4 => mux_2_1:inst11.a
+n2_bit3 => CPL2:inst125.bit3
+n2_bit3 => mux_10_5:inst5.ant3
+n2_bit2 => CPL2:inst125.bit2
+n2_bit2 => mux_10_5:inst5.ant2
+n2_bit1 => CPL2:inst125.bit1
+n2_bit1 => mux_10_5:inst5.ant1
+n2_bit0 => CPL2:inst125.bit0
+n2_bit0 => mux_10_5:inst5.ant0
+s1 <= mux_10_5:inst5.r1
+s2 <= mux_10_5:inst5.r2
+s3 <= mux_10_5:inst5.r3
+s4 <= mux_10_5:inst5.r4
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_10_5:inst5
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_10_5:inst5|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_10_5:inst5|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_10_5:inst5|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_10_5:inst5|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_10_5:inst5|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|CPL2:inst125
+s0 <= somador_completo:inst.S
+bit0 => inst10.IN0
+terra => inst5.IN0
+terra => somador_completo:inst.VEM
+terra => somador_completo:inst2.VEM
+terra => somador_completo:inst3.VEM
+terra => somador_completo:inst4.VEM
+terra => somador_completo:inst11.VEM
+s1 <= somador_completo:inst2.S
+bit1 => inst6.IN0
+s2 <= somador_completo:inst3.S
+bit2 => inst7.IN0
+s3 <= somador_completo:inst4.S
+bit3 => inst8.IN0
+s4 <= somador_completo:inst11.S
+bit4 => inst9.IN0
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|CPL2:inst125|somador_completo:inst
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|CPL2:inst125|somador_completo:inst2
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|CPL2:inst125|somador_completo:inst3
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|CPL2:inst125|somador_completo:inst4
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|CPL2:inst125|somador_completo:inst11
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|modulo_5bits:inst14|mux_2_1:inst11
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst12
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst12|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst12|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst12|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst12|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst12|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|shiftbit_2:inst13
+bit0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+n1_bit2 => inst8.IN0
+n1_bit2 => inst9.IN1
+bit1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+n1_bit3 => inst10.IN0
+bit2 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+n1_bit0 => inst6.IN0
+n1_bit4 => inst11.IN0
+bit3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+n1_bit1 => inst7.IN1
+bit4 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst6
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst6|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst6|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst6|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst6|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst6|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst4
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst4|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst4|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst4|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst4|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|ula:inst3|mux_10_5:inst4|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|simb_negativo:inst365659
+a1 <= sel3.DB_MAX_OUTPUT_PORT_TYPE
+sel3 => a1.DATAIN
+sel3 => b1.DATAIN
+sel3 => c1.DATAIN
+sel3 => d1.DATAIN
+sel3 => e1.DATAIN
+sel3 => f1.DATAIN
+sel3 => inst.IN0
+b1 <= sel3.DB_MAX_OUTPUT_PORT_TYPE
+c1 <= sel3.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= sel3.DB_MAX_OUTPUT_PORT_TYPE
+e1 <= sel3.DB_MAX_OUTPUT_PORT_TYPE
+f1 <= sel3.DB_MAX_OUTPUT_PORT_TYPE
+g1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|decode:inst1
+A1 <= display1:inst1.A1
+C => display1:inst1.C
+C => display2:inst2.C
+B => display1:inst1.B
+B => display2:inst2.B
+A => display1:inst1.A
+A => display2:inst2.A
+B1 <= display1:inst1.B1
+C1 <= display1:inst1.C1
+D1 <= display1:inst1.D1
+E1 <= display1:inst1.E1
+F1 <= display1:inst1.F1
+G1 <= display1:inst1.G1
+A2 <= display2:inst2.A2
+D => display2:inst2.D
+B2 <= display2:inst2.B2
+C2 <= display2:inst2.C2
+D2 <= display2:inst2.D2
+E2 <= display2:inst2.E2
+F2 <= display2:inst2.F2
+G2 <= display2:inst2.G2
+
+
+|projeto_ula|decode:inst1|display1:inst1
+A1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst2.IN0
+C => inst2.IN1
+A => inst.IN1
+B1 <= <GND>
+C1 <= <GND>
+D1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+E1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+F1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+G1 <= <VCC>
+
+
+|projeto_ula|decode:inst1|display2:inst2
+A2 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst5.IN0
+A => inst6.IN0
+A => inst10.IN0
+A => inst20.IN0
+A => inst19.IN0
+A => inst17.IN0
+A => inst24.IN0
+A => inst25.IN0
+A => inst31.IN0
+A => inst42.IN0
+A => inst39.IN0
+A => inst35.IN0
+A => inst36.IN0
+A => inst56.IN0
+A => inst60.IN0
+A => inst58.IN0
+A => inst55.IN0
+A => inst65.IN0
+A => inst71.IN0
+A => inst67.IN0
+A => inst49.IN0
+A => inst48.IN0
+B => inst8.IN0
+B => inst12.IN0
+B => inst6.IN1
+B => inst4.IN1
+B => inst16.IN1
+B => inst19.IN1
+B => inst15.IN1
+B => inst24.IN1
+B => inst26.IN0
+B => inst37.IN0
+B => inst34.IN1
+B => inst33.IN1
+B => inst43.IN0
+B => inst36.IN1
+B => inst57.IN0
+B => inst59.IN0
+B => inst61.IN0
+B => inst55.IN1
+B => inst70.IN0
+B => inst66.IN1
+B => inst68.IN0
+B => inst47.IN1
+B => inst48.IN1
+C => inst9.IN0
+C => inst5.IN2
+C => inst6.IN2
+C => inst63.IN0
+C => inst16.IN2
+C => inst19.IN2
+C => inst18.IN0
+C => inst29.IN0
+C => inst23.IN2
+C => inst38.IN0
+C => inst34.IN2
+C => inst40.IN0
+C => inst35.IN2
+C => inst36.IN2
+C => inst53.IN1
+C => inst52.IN2
+C => inst54.IN1
+C => inst62.IN0
+C => inst65.IN2
+C => inst66.IN2
+C => inst69.IN0
+C => inst50.IN0
+C => inst48.IN2
+D => inst.IN3
+D => inst5.IN3
+D => inst13.IN0
+D => inst11.IN0
+D => inst21.IN0
+D => inst19.IN3
+D => inst15.IN3
+D => inst28.IN0
+D => inst27.IN0
+D => inst32.IN3
+D => inst34.IN3
+D => inst41.IN0
+D => inst35.IN3
+D => inst44.IN0
+D => inst51.IN2
+D => inst53.IN2
+D => inst54.IN2
+D => inst66.IN3
+D => inst46.IN2
+B2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+F2 <= inst72.DB_MAX_OUTPUT_PORT_TYPE
+G2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+E2 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|modulo_5bits:inst2
+s0 <= mux_10_5:inst5.r0
+n2_bit4 => CPL2:inst125.bit4
+n2_bit4 => mux_10_5:inst5.ant4
+n2_bit4 => mux_2_1:inst11.a
+n2_bit3 => CPL2:inst125.bit3
+n2_bit3 => mux_10_5:inst5.ant3
+n2_bit2 => CPL2:inst125.bit2
+n2_bit2 => mux_10_5:inst5.ant2
+n2_bit1 => CPL2:inst125.bit1
+n2_bit1 => mux_10_5:inst5.ant1
+n2_bit0 => CPL2:inst125.bit0
+n2_bit0 => mux_10_5:inst5.ant0
+s1 <= mux_10_5:inst5.r1
+s2 <= mux_10_5:inst5.r2
+s3 <= mux_10_5:inst5.r3
+s4 <= mux_10_5:inst5.r4
+
+
+|projeto_ula|modulo_5bits:inst2|mux_10_5:inst5
+r0 <= mux_2_1:inst.s
+atual0 => mux_2_1:inst.a
+ant0 => mux_2_1:inst.b
+sel => mux_2_1:inst.sel
+sel => mux_2_1:inst2.sel
+sel => mux_2_1:inst3.sel
+sel => mux_2_1:inst4.sel
+sel => mux_2_1:inst5.sel
+r1 <= mux_2_1:inst2.s
+atual1 => mux_2_1:inst2.a
+ant1 => mux_2_1:inst2.b
+r2 <= mux_2_1:inst3.s
+atual2 => mux_2_1:inst3.a
+ant2 => mux_2_1:inst3.b
+r3 <= mux_2_1:inst4.s
+atual3 => mux_2_1:inst4.a
+ant3 => mux_2_1:inst4.b
+r4 <= mux_2_1:inst5.s
+atual4 => mux_2_1:inst5.a
+ant4 => mux_2_1:inst5.b
+
+
+|projeto_ula|modulo_5bits:inst2|mux_10_5:inst5|mux_2_1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|modulo_5bits:inst2|mux_10_5:inst5|mux_2_1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|modulo_5bits:inst2|mux_10_5:inst5|mux_2_1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|modulo_5bits:inst2|mux_10_5:inst5|mux_2_1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|modulo_5bits:inst2|mux_10_5:inst5|mux_2_1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
+|projeto_ula|modulo_5bits:inst2|CPL2:inst125
+s0 <= somador_completo:inst.S
+bit0 => inst10.IN0
+terra => inst5.IN0
+terra => somador_completo:inst.VEM
+terra => somador_completo:inst2.VEM
+terra => somador_completo:inst3.VEM
+terra => somador_completo:inst4.VEM
+terra => somador_completo:inst11.VEM
+s1 <= somador_completo:inst2.S
+bit1 => inst6.IN0
+s2 <= somador_completo:inst3.S
+bit2 => inst7.IN0
+s3 <= somador_completo:inst4.S
+bit3 => inst8.IN0
+s4 <= somador_completo:inst11.S
+bit4 => inst9.IN0
+
+
+|projeto_ula|modulo_5bits:inst2|CPL2:inst125|somador_completo:inst
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|modulo_5bits:inst2|CPL2:inst125|somador_completo:inst2
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|modulo_5bits:inst2|CPL2:inst125|somador_completo:inst3
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|modulo_5bits:inst2|CPL2:inst125|somador_completo:inst4
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|modulo_5bits:inst2|CPL2:inst125|somador_completo:inst11
+RESTO <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+A => inst17.IN0
+A => inst18.IN0
+A => inst15.IN0
+VEM => inst17.IN1
+VEM => inst16.IN1
+VEM => inst20.IN1
+B => inst18.IN1
+B => inst16.IN0
+B => inst20.IN0
+S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto_ula|modulo_5bits:inst2|mux_2_1:inst11
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+b => inst1.IN0
+sel => inst3.IN0
+sel => inst.IN1
+a => inst.IN0
+
+
